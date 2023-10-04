@@ -72,7 +72,7 @@ section.hero-section{
 
     display: flex;
     align-items: center;
-    padding: 20px 100px 5px 200px ; 
+    padding: 40px 120px 0px 240px ; 
 }
 
 .hero-section__title{
@@ -330,6 +330,11 @@ footer a{
     section.hero-section{
         flex-direction: column;
         padding: 40px;
+        padding-top: 120px;
+    }
+
+    section.hero-section img{
+        display: none;
     }
 
     /* About section */
