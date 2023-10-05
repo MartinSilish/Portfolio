@@ -106,6 +106,10 @@ ul.social-icons{
     color: #fff;
 }
 
+.social-icons li a > i.fa-github:hover{
+    color: #4078c0;
+}
+
 .social-icons li a > i.fa-facebook:hover{
     color: #1877f2;
 }
