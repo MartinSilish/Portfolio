@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+
+:root{
+    --primary: #12bdff; 
+    --primary-hover: #1c6886;   
+  --dark-primary: #1b1f24;
+  --nunito: 'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* header */
+header{
+    background-color: var(--dark-primary);
+    padding:20px;
+    /*  */
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--primary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 20px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header ul li a:hover{
+    color: var(--primary);
+}
+
+/* Section: hero Homepage */
+section.hero-section{
+    background-color: var(--dark-primary);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    padding: 40px 120px 0px 240px ; 
+}
+
+.hero-section__title{
+    font-size: 48px;
+    font-weight:  bold;
+}
+
+.hero-section__title > span{
+    color: var(--primary);
+}
+
+.hero-section__desc{
+    color: #e9eff1;
+}
+
+.social-icons{
+    margin: 20px;
+}
+
+.social-icons li{
+    margin-right: 15px;
+}
+
+ul.social-icons{
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons li a > i.fa-github:hover{
+    color: #4078c0;
+}
+
+.social-icons li a > i.fa-facebook:hover{
+    color: #1877f2;
+}
+
+.social-icons li a > i.fa-linkedin:hover{
+    color: #0072b1;
+}
+
+.social-icons li a > i.fa-instagram:hover{
+    color: #962fbf;
+}
+
+.hero-buttons button{
+    margin-right: 10px;
+}
+
+/* buttons */
+.btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.btn-primary{
+    background-color: var(--primary);
+    font-weight: 600;
+    color: var(--dark-primary);
+}
+
+.btn.btn-primary:hover{
+    background-color: #fff;
+
+}
+
+.btn-dark-outlined{
+    background-color: var(--dark-primary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+    font-weight: 600px;
+}
+
+.btn-dark-outlined:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--dark-primary);
+}
+
+/* About Me */
+.about-section{
+    background-color: #22282f;
+    color: #fff;
+    padding: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section img{
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    box-shadow: 5px 10px 40px var(--primary);
+}
+
+.about-section--desc{
+    margin-left: 100px;
+    max-width: 450px;
+}
+
+.about-section--desc h4{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.about-section--desc ul{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.about-section--desc li{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.about-section--desc li > a{
+    text-decoration: none;
+    color: gray;
+}
+
+.about-section--desc li > a:hover{
+    color: var(--primary);
+}
+
+.about-section--desc li > strong{
+    color: #fff;
+}
+
+/* Work Section */
+.work-section{
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+
+.work-section-items{
+    display: flex;
+    justify-content: center;
+}
+
+.work-section__title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.work-section__title span{
+    color: var(--primary);
+}
+
+.work-section-box{
+    background-color: #22282f;
+    padding: 30px 30px
+    ;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.work-section-box:hover{
+    background-color: #1b1f24;
+}
+
+.work-section-box p{
+    color: gray;
+    font-size: 14px;
+}
+
+.work-section-box a{
+    text-decoration: none;
+    color: #feda75;
+}
+
+.work-section-box__desc{
+    margin-top: 20px;
+    margin-bottom: 10px ;
+}
+
+.work-section-box__desc p{
+    padding: 5px;
+}
+
+.work-section-box__icon{
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.work-section-box__icon:hover{
+    color: var(--dark-primary);
+}
+
+.contact-section{
+    background-color: #14171c;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h4{
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.contact-section h4 > span{
+    color: var(--primary);
+}
+
+.contact-section form input , textarea{
+    padding: 5px 10px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: var(--nunito);
+}
+
+/* footer */
+footer{
+    background-color: var(--dark-primary);
+    color: gray;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;        
+    }
+    
+    header > *{
+        margin-bottom: 10px;
+    }
+
+    /* hero section */
+    section.hero-section{
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 120px;
+    }
+
+    section.hero-section img{
+        display: none;
+    }
+
+    /* About section */
+    section.about-section{
+        flex-direction: column;
+    }
+
+    .about-section--desc{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* My Works */
+    .work-section{
+        padding: 30px 10px;
+    }
+    .work-section-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-section-box{
+        margin-bottom: 20px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Contact */
+    .contact-section form input, textarea{
+        width: 100%;
+    }
+  }
